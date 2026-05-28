@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Aulia Paembonan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      max-width: 1200px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 60px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 span {
+      color: #38bdf8;
+    }
+
+    .hero-text p {
+      color: #cbd5e1;
+      line-height: 1.8;
+      margin-bottom: 25px;
+      max-width: 600px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #38bdf8;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: 0.3s ease;
+      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.4);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #0ea5e9;
+    }
+
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-card {
+      width: 350px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 30px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    }
+
+    .profile-card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .profile-card h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .profile-card p {
+      color: #cbd5e1;
+      margin-bottom: 8px;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 40px;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #cbd5e1;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 25px;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .card p, .card li {
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 10px 18px;
+      border-radius: 30px;
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #e2e8f0;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px) {
+      .hero-text h1 {
+        font-size: 42px;
+      }
+
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-text p {
+        margin: auto auto 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Halo, Saya <span>Aulia Paembonan</span></h1>
+        <p>
+          Seorang Creative Digital Specialist yang memiliki passion dalam desain modern,
+          branding, dan pengembangan media digital. Saya senang menciptakan karya yang
+          elegan, profesional, dan memberikan pengalaman visual yang menarik.
+        </p>
+        <a href="#about" class="btn">Lihat Portofolio</a>
+      </div>
+
+      <div class="hero-image">
+        <div class="profile-card">
+          <img src="https://i.pinimg.com/736x/7f/16/0c/7f160cfa8b8b31ec5b3f4e3c7e5f6f67.jpg" alt="Profile">
+          <h2>Aulia Paembonan</h2>
+          <p>Perempuan</p>
+          <p>Creative Digital Specialist</p>
+          <p>Makassar, Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="section-title">
+      <h2>Tentang Saya</h2>
+      <p>Profil singkat dan informasi pribadi</p>
+    </div>
+
+    <div class="about">
+      <div class="card">
+        <h3>Bio</h3>
+        <p>
+          Aulia Paembonan adalah seorang profesional muda yang aktif di bidang kreatif digital.
+          Dengan kemampuan komunikasi yang baik dan kreativitas tinggi, ia telah membantu berbagai
+          proyek branding dan media sosial untuk berkembang lebih modern dan menarik.
+          Aulia dikenal sebagai pribadi yang disiplin, inovatif, dan mudah beradaptasi.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Informasi Pribadi</h3>
+        <ul>
+          <li><strong>Nama:</strong> Aulia Paembonan</li>
+          <li><strong>Jenis Kelamin:</strong> Perempuan</li>
+          <li><strong>Usia:</strong> 22 Tahun</li>
+          <li><strong>Email:</strong> auliapaembonan@email.com</li>
+          <li><strong>No HP:</strong> +62 812-4567-8910</li>
+          <li><strong>Hobi:</strong> Fotografi, Editing, Traveling</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Pendidikan</h3>
+        <p>
+          S1 Teknologi dan Manajemen Industri Peternakan<br>
+          Universitas Nusantara Digital Indonesia<br>
+          2021 - 2025
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>Pengalaman Kerja</h2>
+      <p>Beberapa pengalaman profesional fiktif</p>
+    </div>
+
+    <div class="about">
+      <div class="card">
+        <h3>Social Media Designer</h3>
+        <p><strong>Creative Studio Makassar</strong> | 2023 - 2024</p>
+        <p>
+          Mendesain konten media sosial modern dan meningkatkan engagement akun klien hingga 40%.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Branding Assistant</h3>
+        <p><strong>Vision Digital Agency</strong> | 2022 - 2023</p>
+        <p>
+          Membantu pengembangan identitas visual brand dan strategi pemasaran digital.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Freelance Content Creator</h3>
+        <p><strong>Remote Project</strong> | 2021 - Sekarang</p>
+        <p>
+          Mengelola konten kreatif untuk berbagai UMKM dan bisnis online di Indonesia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>Keahlian</h2>
+      <p>Kemampuan dan keterampilan profesional</p>
+    </div>
+
+    <div class="card">
+      <div class="skills">
+        <div class="skill">UI/UX Design</div>
+        <div class="skill">Graphic Design</div>
+        <div class="skill">Content Writing</div>
+        <div class="skill">Public Speaking</div>
+        <div class="skill">Social Media Management</div>
+        <div class="skill">Photography</div>
+        <div class="skill">Video Editing</div>
+        <div class="skill">HTML & CSS</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>Proyek</h2>
+      <p>Contoh proyek kreatif</p>
+    </div>
+
+    <div class="about">
+      <div class="card">
+        <h3>Elegant Coffee Branding</h3>
+        <p>
+          Membuat konsep desain branding modern untuk bisnis coffee shop lokal.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Fashion Social Campaign</h3>
+        <p>
+          Mengembangkan desain kampanye media sosial dengan tema minimalis dan elegan.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Portfolio Photography</h3>
+        <p>
+          Proyek dokumentasi visual dengan konsep aesthetic modern untuk personal branding.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Aulia Paembonan | Modern Portfolio Website</p>
+  </footer>
+
+</body>
+</html>
